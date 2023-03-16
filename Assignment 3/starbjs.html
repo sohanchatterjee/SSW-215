@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--Styling webpage using CSS-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Starbucks, Los Angeles</title>
+</head>
+
+<body>
+<h1 id="uniquehd">Welcome to Starbucks, Los Angeles</h1>
+  <p>Starbucks Corporation is an American multinational chain of coffeehouses
+  and roastery reserves headquartered in Seattle, Washington. As the world's largest
+  coffeehouse chain, Starbucks is seen to be the main representation of the United States'second wave of coffee culture. As of early 2020, the company operates over 30,000 locations worldwide in more than 70 countries. Starbucks locations serve hot and cold drinks,whole-bean coffee, microground instant coffee known as VIA, espresso, caffe latte, full- and loose-leaf teas including Teavana tea products, Evolution Fresh juices, Frappuccino beverages, La Boulange pastries, and snacks including items such as chips and crackers; some offerings (including their annual fall launch of the Pumpkin Spice Latte) are seasonal or specific to the locality of the store.</p>
+  <h3 >Our main menu categories are: </h3>
+  <p id="menuItems"></p>
+  <script>
+    const menu = ["Coffee", "Food", "At Home Coffee"];
+    let text = "";
+    for (let i = 0; i < menu.length; i++){
+      text += menu[i] + "<br>";
+    }
+    document.getElementById("menuItems").innerHTML = text;
+  </script>
+  <h3>Our customers’ top three favorites Hot Coffees are: </h3>
+  <p id="coffeeItems"></p>
+  <script>
+    const coffee = ["Caffe Americano", "Cappuccino", "Expresso"];
+    let coffeeTxt = "";
+    for (let i = 0; i < coffee.length; i++){
+      coffeeTxt += coffee[i] + "<br>";
+    }
+    document.getElementById("coffeeItems").innerHTML = coffeeTxt;
+  </script>
+  <h3>Why not give our delicious food menu a try also?</h3>
+  <p id="foodItems"></p>
+  <script>
+    const food = ["Ham and Swiss Panini", "Cripsy Grilled Cheese Sandwhich", "Chicken Caprese Panini"];
+    let foodText = "";
+    for (let i = 0; i < food.length; i++){
+      foodText += food[i] + "<br>";
+    }
+    document.getElementById("foodItems").innerHTML = foodText;
+  </script>
+  <h4 id=priceheader>Food Price List</h4>
+  <table class="center">
+    <tr>
+      <th>Item Number</th>
+      <th>Food</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Ham and Swiss Panini</td>
+      <td>$9</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Cripsy Grilled Cheese Sandwhich</td>
+      <td>$15</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Chicken Caprese Panini</td>
+      <td>$12</td>
+    </tr>
+  </table>
+</body>
+</html>
